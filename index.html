@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8dce4">
+  <title>Para Amal ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div id="petals" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="ornament">✦</div>
+      <p class="eyebrow">UNA PEQUEÑA SORPRESA PARA AMAL</p>
+      <h1>Feliz cumpleaños <span>amor</span></h1>
+      <p class="subtitle">De Adri, con todo mi amor.</p>
+      <div class="date">15 · 03 · 2026</div>
+      <button class="gold-button" onclick="openGift()">Abrir mi regalo <span>♥</span></button>
+      <div class="scroll-hint">desliza hacia abajo ↓</div>
+    </section>
+
+    <section class="section time-section reveal">
+      <p class="eyebrow">DESDE AQUEL DÍA</p>
+      <h2>Nuestra historia comenzó aquí</h2>
+      <p class="section-text">Y desde entonces, cada segundo contigo cuenta.</p>
+
+      <div class="counter">
+        <div><strong id="days">0</strong><span>días</span></div>
+        <div><strong id="hours">0</strong><span>horas</span></div>
+        <div><strong id="minutes">0</strong><span>minutos</span></div>
+        <div><strong id="seconds">0</strong><span>segundos</span></div>
+      </div>
+
+      <div class="heart-divider">♥</div>
+    </section>
+
+    <section class="section gallery-section reveal">
+      <p class="eyebrow">NUESTROS RECUERDOS</p>
+      <h2>15 recuerdos, 15 razones para quererte</h2>
+      <p class="section-text">Porque en cada foto hay un pedacito de nuestra historia. ❤️</p>
+
+      <div class="gallery">
+        <figure class="photo-card"><img src="fotos/foto1.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Qué sueñito tenías zzzzz</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto2.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Lo bella que eres</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto3.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Tu cara de ángel</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto4.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Nuestra etapa estudiosa</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto5.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Mi gymsis🤍</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto6.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Nuestros besos</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto7.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Esponjita, esponjita</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto8.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Tu carita hermosa</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto9.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Tus uñitas😍</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto10.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Tus regalitos</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto11.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Los días de piscina</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto12.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Nuestras citas</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto13.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Nuestros viajes en coche</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto14.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Nuestros planes de vida</figcaption></figure>
+        <figure class="photo-card"><img src="fotos/foto15.jpg" alt="Recuerdo de Amal y Adri" loading="lazy"><figcaption>Nuestro amor.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section letter-section reveal">
+      <p class="eyebrow">PARA TI</p>
+      <h2>Tengo algo que decirte...</h2>
+
+      <button class="envelope" onclick="openLetter()" aria-label="Abrir carta">
+        <div class="envelope-back"></div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+        <div class="letter-heart">♥</div>
+      </button>
+
+      <p class="tap-hint">Pulsa el sobre ❤️</p>
+
+      <div class="letter-modal" id="letterModal">
+        <div class="letter-card">
+          <button class="close" onclick="closeLetter()">×</button>
+          <p class="letter-date">15 de marzo de 2026</p>
+          <h3>Para Amal</h3>
+          <div class="letter-content">
+            <p>Mi amor:</p>
+            <p>A veces hay cosas que son difíciles de decir con palabras, en especial todo el amor que siento por ti. Por eso he intentado capturarlo lo mejor posible aquí, para que puedas volver cuando quieras.</p>
+            <p>Desde ese 15 de marzo, hemos construido la relación más preciosa que jamás haya existido. Cada recuerdo, cada risa, cada momento contigo se ha convertido en una parte indispensable de mí, de nosotros.</p>
+            <p>Gracias por estar siempre a mi lado, por ser tú y por hacer que tantos momentos cotidianos se conviertan en recuerdos que voy a conservar toda mi vida.</p>
+            <p>Y esto es solo el principio.</p>
+            <p class="signature">Te amo,<br><span>Adri ♥</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surprise-section reveal">
+      <div class="rose-icon">🌹</div>
+      <p class="eyebrow">UNA ÚLTIMA COSA</p>
+      <h2>Pero espera...</h2>
+      <p class="section-text">Todavía me queda algo por decirte.</p>
+      <button class="gold-button" onclick="showSurprise()">Hay algo más... ♥</button>
+
+      <div class="surprise" id="surprise">
+        <div class="sparkles">✦　♥　✦</div>
+        <p>Si pudiera volver al</p>
+        <h3>15 · 03 · 2026</h3>
+        <h2>volvería a elegirte.</h2>
+        <div class="final-heart">♥</div>
+        <p class="small-final">Amal & Adri · para siempre</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Hecho con amor por Adri para Amal ❤️
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
